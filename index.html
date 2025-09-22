@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Landing - Integra Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-grid">
+      <div class="brand">
+        <a href="#" aria-label="Integra Magna Home">Integra<span class="accent">Magna</span></a>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="toggle" aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="visually-hidden">Toggle theme</span>
+          <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home" aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-heading">Build beautiful interfaces with <span class="accent">CSS Grid</span></h1>
+          <p class="lead">A responsive landing page built using CSS Grid only. Resize the window to see the layout adapt. Uses relative units and <code>clamp()</code> for fluid typography.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#features">Get Started</a>
+            <a class="btn ghost" href="#pricing">View Pricing</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card visual-card">
+            <div class="card-inner">
+              <h3>Live Preview</h3>
+              <p>Interactive CSS Grid demo card. Hover to see interaction.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features" aria-labelledby="features-heading">
+      <h2 id="features-heading" class="section-title">Features</h2>
+      <div class="features-grid">
+        <article class="feature card" tabindex="0">
+          <h3>Responsive</h3>
+          <p>Mobile, tablet & desktop layouts using <code>grid-template-areas</code> and media queries.</p>
+        </article>
+
+        <article class="feature card" tabindex="0">
+          <h3>Accessible</h3>
+          <p>Keyboard-friendly toggle and semantic markup for screen readers.</p>
+        </article>
+
+        <article class="feature card" tabindex="0">
+          <h3>Clean Code</h3>
+          <p>Separate CSS file, comments, and clear class names make this easy to maintain.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="container pricing" aria-labelledby="pricing-heading">
+      <h2 id="pricing-heading" class="section-title">Pricing</h2>
+      <div class="pricing-grid">
+        <div class="plan card" tabindex="0">
+          <h3>Starter</h3>
+          <p class="price">Free</p>
+          <ul>
+            <li>Basic features</li>
+            <li>Community support</li>
+          </ul>
+          <a class="btn primary" href="#contact">Choose</a>
+        </div>
+
+        <div class="plan card featured" tabindex="0">
+          <h3>Pro</h3>
+          <p class="price">₹499 / mo</p>
+          <ul>
+            <li>All features</li>
+            <li>Priority support</li>
+          </ul>
+          <a class="btn primary" href="#contact">Choose</a>
+        </div>
+
+        <div class="plan card" tabindex="0">
+          <h3>Enterprise</h3>
+          <p class="price">Contact</p>
+          <ul>
+            <li>Custom solutions</li>
+            <li>Dedicated manager</li>
+          </ul>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Contact</h2>
+      <form class="contact-form" action="#" onsubmit="return false;">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2025 Integra Magna — Design replication assignment</p>
+      <nav aria-label="Footer">
+        <ul class="footer-list">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
